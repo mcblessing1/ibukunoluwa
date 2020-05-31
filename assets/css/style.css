@@ -21,12 +21,6 @@ body::before {
   z-index: -1;
 }
 
-@media (max-width: 576px) {
-  body::before {
-    background: #040404;
-  }
-}
-
 @media (min-width: 1024px) {
   body::before {
     background-attachment: fixed;
@@ -61,7 +55,15 @@ h6 {
   display: flex;
   align-items: center;
   z-index: 997;
-  overflow-y: auto;
+  overflow-y: auto;    
+  background: rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 576px) {
+  #header {
+    padding: 20px;
+    text-align: center;
+  }
 }
 
 #header a img {
@@ -101,6 +103,12 @@ h6 {
 @media (min-width: 992px) {
   #header h2 {
     width: 75%;
+  }
+}
+
+@media (max-width: 576px) {
+  #header h1 {
+    text-align: center;
   }
 }
 
@@ -250,6 +258,7 @@ h6 {
   border-radius: 10px;
   padding: 10px 0;
   border: 2px solid rgba(255, 255, 255, 0.12);
+  text-align: center;
 }
 
 .mobile-nav * {
