@@ -12,7 +12,7 @@ body {
 body::before {
   content: "";
   position: fixed;
-  background: #040404 url("../img/Me-bg-3.png") top right no-repeat;
+  background: #040404 url("../img/bg-empty.png") top right no-repeat;
   background-size: cover;
   left: 0;
   right: 0;
@@ -418,6 +418,10 @@ section .container {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
+.about-me #headshot {
+  border-radius: 20px;
+}
+
 .about-me .content h3 {
   font-weight: 700;
   font-size: 26px;
@@ -435,6 +439,11 @@ section .container {
 
 .about-me .content ul i {
   font-size: 20px;
+  padding-right: 2px;
+  color: #8062e6;
+}
+
+.about-me .content ul strong, span {
   padding-right: 2px;
   color: #8062e6;
 }
