@@ -156,6 +156,11 @@
 
   });
 
+  // On portfolio page load, click featured button
+  $(window).on('load', function() {
+    $("#about").trigger('click');
+  });
+
   // Initiate venobox (lightbox feature used in portofilo)
   $(document).ready(function() {
     $('.venobox').venobox({
