@@ -152,8 +152,8 @@ h6 {
   }
 
   #header h2 {
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 17px;
+/*    line-height: `30px;*/
     text-align: center;
   }
 
@@ -247,7 +247,7 @@ h6 {
   position: fixed;
   top: 55px;
   right: 15px;
-  bottom: 15px;
+  /*  bottom: 15px;*/
   left: 15px;
   z-index: 9999;
   overflow-y: auto;
@@ -344,7 +344,7 @@ h6 {
   }
 
   #header.header-top h1 {
-    font-size: 26px;
+    font-size: 20px;
   }
 }
 
@@ -398,7 +398,7 @@ section .container {
 
 .section-title h2::after {
   content: "";
-  width: 120px;
+  width: 5%;
   height: 1px;
   display: inline-block;
   background: #8062e6;
