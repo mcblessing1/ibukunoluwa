@@ -3,6 +3,7 @@
 --------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
+  font-size: 15px;
   background-color: #040404;
   color: #fff;
   position: relative;
@@ -64,13 +65,16 @@ h6 {
     padding: 20px;
     text-align: center;
   }
+  
+  #header {
+    height: auto;
+  }
 }
 
 #header a img {
   width: 80px;
   padding: 0;
   margin-bottom: 10px;
-  /*  margin-top: 60px;*/
 }
 
 #header * {
@@ -94,7 +98,7 @@ h6 {
 }
 
 #header h2 {
-  font-size: 24px;
+  font-size: 15px;
   line-height: 1.5;
   margin-top: 10px;
   color: rgba(255, 255, 255, 0.8);
@@ -113,13 +117,27 @@ h6 {
 }
 
 #header h2 span {
-  color: #fff;
+  color: #8062e6;
   border-bottom: 2px solid #8062e6;
   padding-bottom: 2px;
 }
 
+#header > div > h2 > a {
+  color: #fff !important;
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+#header h2 ba {
+  color: #8062e6;
+/*  border-bottom: 2px solid #8062e6;*/
+/*  padding-bottom: 2px;*/
+}
+
 #header .social-links {
   margin-top: 40px;
+  margin-bottom: 20px;
   display: flex;
 }
 
@@ -141,7 +159,26 @@ h6 {
   background: #8062e6;
 }
 
+#header.header-tops img {
+  display: block;
+  margin-top: 20px;
+  margin-left: -20px;
+}
+
+#header.header-tops.header-top img {
+  display: none;
+  margin-top: 20px;
+}
+
 @media (max-width: 992px) {
+  #header.header-tops.header-top img {
+    display: none;
+  }
+  
+  #header.header-tops img {
+  margin-left: 0px;
+}
+  
   #header img {
     display: none;
   }
@@ -152,8 +189,8 @@ h6 {
   }
 
   #header h2 {
-    font-size: 17px;
-/*    line-height: `30px;*/
+    font-size: 15px;
+/*    line-height: 30px;*/
     text-align: center;
   }
 
@@ -639,7 +676,7 @@ section .container {
 
 @media (max-width: 767px) {
   .testimonials {
-    margin: 30px 10px;
+/*    margin: 30px 10px;*/
   }
 }
 
