@@ -457,6 +457,7 @@ section .container {
 --------------------------------------------------------------*/
 .about-me #headshot {
   border-radius: 20px;
+  width: 100%;
 }
 
 .about-me .content h3 {
