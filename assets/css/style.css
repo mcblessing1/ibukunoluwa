@@ -4,23 +4,31 @@
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 15px;
-  background-color: #040404;
   color: #fff;
   position: relative;
-  background: transparent;
+  /* background: transparent; */
+  background: top right repeat;
+  background-size: cover;
+  background-color: #040404;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 100vh;  
+  z-index: -1;
+  transition: ease-in-out 2s
 }
-
+/* 
 body::before {
   content: "";
   position: fixed;
-  background: #040404 url("../img/bg-empty.png") top right no-repeat;
+  background: top right no-repeat;
   background-size: cover;
   left: 0;
   right: 0;
   top: 0;
-  height: 100vh;
+  height: 100vh;  
   z-index: -1;
-}
+} */
 
 @media (min-width: 1024px) {
   body::before {
@@ -57,7 +65,7 @@ h6 {
   align-items: center;
   z-index: 997;
   overflow-y: auto;    
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.68);
 }
 
 @media (max-width: 576px) {
@@ -122,12 +130,12 @@ h6 {
   padding-bottom: 2px;
 }
 
-#header > div > h2 > a {
+/* #header > div > h2 > a {
   color: #fff !important;
   font-family: "Poppins", sans-serif;
   font-size: 40px;
   font-weight: 700;
-}
+} */
 
 #header h2 ba {
   color: #8062e6;
