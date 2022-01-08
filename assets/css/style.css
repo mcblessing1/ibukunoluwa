@@ -683,11 +683,13 @@ section .container {
   background-color: #8062e6 !important;
 }
 
+/* 
 @media (max-width: 767px) {
   .testimonials {
-/*    margin: 30px 10px;*/
+    margin: 30px 10px;
   }
 }
+*/
 
 /*--------------------------------------------------------------
 # Resume
