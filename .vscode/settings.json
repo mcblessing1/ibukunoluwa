@@ -4,5 +4,6 @@
     "titleBar.activeBackground": "#2B4539",
     "titleBar.activeForeground": "#F9FBFA"
   },
-  "liveServer.settings.multiRootWorkspaceName": "ibukunoluwashotubo"
+  "liveServer.settings.multiRootWorkspaceName": "ibukunoluwashotubo",
+  "livePreview.defaultPreviewPath": "/index.html"
 }
