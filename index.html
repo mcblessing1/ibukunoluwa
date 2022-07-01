@@ -991,34 +991,42 @@
 			</div>
 
 			<div class="row justify-content-center">
-				<div class="col-lg-4 col-md-6 d-fle align-items-stretch">
+				<div class="col-lg-4 col-md-6 d-fle align-items-stretch clickable-card">
 					<div class="icon-box">
 						<div class="icon">
 							<i class="bx bxs-mouse-alt"></i>
 						</div>
-						<h4>Product
-							<br />Design</h4>
+						<h4><a href="https://ibukunoluwashotubo.design/#contact" class="main-link">Product (UI/UX)<br />Design</a></h4>
 						<p></p>
 					</div>
 				</div>
 
-				<div class="col-lg-4 col-md-6 d-fle align-items-stretch mt-4 mt-md-0">
-					<div class="icon-box">
-						<div class="icon">
-							<i class="bx bx-code-alt"></i>
-						</div>
-						<h4>Frontend Web Development</h4>
-						<!--            <p>I design beautiful and usable  websites and web apps</p>-->
-					</div>
-				</div>
-
-				<div class="col-lg-4 col-md-6 d-fle align-items-stretch mt-4 mt-lg-0">
+				<div class="col-lg-4 col-md-6 d-fle align-items-stretch mt-4 mt-md-0 clickable-card">
 					<div class="icon-box">
 						<div class="icon">
 							<i class="bx bxs-mouse-alt"></i>
 						</div>
-						<h4>Design
-							<br />Sprints</h4>
+						<h4><a href="https://ibukunoluwashotubo.design/#contact" class="main-link">UI Design</a></h4>
+						<p></p>
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-md-6 d-fle align-items-stretch mt-4 mt-md-0 clickable-card">
+					<div class="icon-box">
+						<div class="icon">
+							<i class="bx bx-code-alt"></i>
+						</div>
+						<h4><a href="https://ibukunoluwashotubo.design/#contact" class="main-link">Website Design</a></h4>
+						<!--            <p>I design beautiful and usable  websites and web apps</p>-->
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-md-6 d-fle align-items-stretch mt-4 mt-lg-">
+					<div class="icon-box">
+						<div class="icon">
+							<i class="bx bxs-mouse-alt"></i>
+						</div>
+						<h4><a href="https://ibukunoluwashotubo.design/#contact" class="main-link">Design<br />Sprints</a></h4>
 						<p></p>
 					</div>
 				</div>
@@ -1028,8 +1036,7 @@
 						<div class="icon">
 							<i class="bx bxs-business"></i>
 						</div>
-						<h4>Business
-							<br />Development</h4>
+						<h4><a href="https://ibukunoluwashotubo.design/#contact" class="main-link">Business<br />Development</a></h4>
 						<p></p>
 					</div>
 				</div>
@@ -1039,10 +1046,30 @@
 						<div class="icon">
 							<i class="bx bxs-institution"></i>
 						</div>
-						<h4>Training</h4>
+						<h4><a href="https://ibukunoluwashotubo.design/#contact" class="main-link">Training</a></h4>
 						<p></p>
 					</div>
 				</div>
+
+				<script>
+					const card = document.querySelector(".clickable-card");
+					const mainLink = card.querySelector(".main-link");
+					const clickableElements = Array.from(card.querySelectorAll("a")); //we are using 'a' here for simplicity but ideally you should put a class like 'clickable' on every clicable element inside card(a, button) and use that in query selector
+					
+					clickableElements.forEach((ele) =>
+					ele.addEventListener("click", (e) => e.stopPropagation())
+					);
+					
+					function handleClick(event) {
+					const noTextSelected = !window.getSelection().toString();
+					
+					if (noTextSelected) {
+						mainLink.click();
+					}
+					}
+					
+					card.addEventListener("click", handleClick);
+				</script>
 			</div>
 		</div>
 	</section>
@@ -1377,13 +1404,24 @@
 				<h2>Contact</h2>
 				<p>Contact Me</p>
 			</div>
-
+			
+			<!-- My Hectic form -->
+			<form action="forms/contact.php" method="post" role="form" class="php-email-form mt-4">
+				<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.3.2/iframeResizer.min.js"></script>
+					<div style="width:100%; min-height:500px">
+						<iframe src="https://hello.hecticapp.com/01/oak-technologies/project-discovery-form?inFrame=true" id="hectic-form" style="padding: 0px; margin: 0px; border: 0; max-width: 100%; min-width: 100%"></iframe>
+					</div>
+				<script type="text/javascript">
+				setTimeout(() => iFrameResize({heightCalculationMethod: 'min', sizeWidth: true, sizeHeight: true, log: false, checkOrigin: false}, '#hectic-form'),100);
+				</script>
+			</form>
+			
 			<div class="row mt-2">
 				<div class="col-md-6 d-flex align-items-stretch">
 					<div class="info-box">
 						<i class="bx bx-map"></i>
 						<h3>My Address</h3>
-						<p>Nairobi, Kenya.</p>
+						<p>Lagos, Nigeria.</p>
 					</div>
 				</div>
 
@@ -1392,13 +1430,13 @@
 						<i class="bx bx-share-alt"></i>
 						<h3>Social Profiles</h3>
 						<div class="social-links">
-							<a target="_blank" href="https://twitter.com/mcblessing1" class="twitter">
+							<a target="_blank" href="https://twitter.com/ibukunshotubo" class="twitter">
 								<i class="icofont-twitter"></i>
 							</a>
 							<a target="_blank" href="https://facebook.com/mcblessing1" class="facebook">
 								<i class="icofont-facebook"></i>
 							</a>
-							<a target="_blank" href="https://linkedin.com/in/mcblessing1" class="linkedin">
+							<a target="_blank" href="https://linkedin.com/in/ibukunoluwashotubo" class="linkedin">
 								<i class="icofont-linkedin"></i>
 							</a>
 							<a target="_blank" href="https://wa.link/tr6gnk" class="whatsapp">
@@ -1425,34 +1463,35 @@
 				</div>
 			</div>
 
-			<!--
-                                                      <form action="forms/contact.php" method="post" role="form" class="php-email-form mt-4">
-                                                        <div class="form-row">
-                                                          <div class="col-md-6 form-group">
-                                                            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                                                            <div class="validate"></div>
-                                                          </div>
-                                                          <div class="col-md-6 form-group">
-                                                            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-                                                            <div class="validate"></div>
-                                                          </div>
-                                                        </div>
-                                                        <div class="form-group">
-                                                          <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                                                          <div class="validate"></div>
-                                                        </div>
-                                                        <div class="form-group">
-                                                          <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-                                                          <div class="validate"></div>
-                                                        </div>
-                                                        <div class="mb-3">
-                                                          <div class="loading">Loading</div>
-                                                          <div class="error-message"></div>
-                                                          <div class="sent-message">Your message has been sent. Thank you!</div>
-                                                        </div>
-                                                        <div class="text-center"><button type="submit">Send Message</button></div>
-                                                      </form>
-                                                -->
+		<!--
+			<form action="forms/contact.php" method="post" role="form" class="php-email-form mt-4">
+				<div class="form-row">
+					<div class="col-md-6 form-group">
+					<input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+					<div class="validate"></div>
+					</div>
+					<div class="col-md-6 form-group">
+					<input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+					<div class="validate"></div>
+					</div>
+				</div>
+				<div class="form-group">
+					<input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+					<div class="validate"></div>
+				</div>
+				<div class="form-group">
+					<textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+					<div class="validate"></div>
+				</div>
+				<div class="mb-3">
+					<div class="loading">Loading</div>
+					<div class="error-message"></div>
+					<div class="sent-message">Your message has been sent. Thank you!</div>
+				</div>
+				<div class="text-center"><button type="submit">Send Message</button></div>
+			</form>
+		-->
+												
 		</div>
 	</section>
 	<!-- End Contact Section -->
