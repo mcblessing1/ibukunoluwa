@@ -13,6 +13,7 @@
 		gtag("js", new Date());
 
 		gtag("config", "G-2MZD0LVXGN");
+
 	</script>
 	<meta charset="utf-8" />
 	<meta content="width=device-width, initial-scale=1.0" name="viewport" />
@@ -63,10 +64,11 @@
 				<ul>
 					<li>A passionate and self-taught Problem-solver with an insatiable curiosity.</li>
 					<li>Professionally, I'm a <ba>Product Designer</ba> with 2 years + experience in product related roles.</li>
-					<li>And I'm on a mission - to <ba>make the world better by solving problems and inspiring others to do the same.</ba></li>
+					<li>And I'm on a mission - to <ba>make the world better by solving problems and inspiring others to do the same.</ba>
+					</li>
 				</ul>
 			</h2>
- 
+
 			<nav class="nav-menu d-none d-lg-block">
 				<ul>
 					<li class="active">
@@ -1055,20 +1057,21 @@
 					const card = document.querySelector(".clickable-card");
 					const mainLink = card.querySelector(".main-link");
 					const clickableElements = Array.from(card.querySelectorAll("a")); //we are using 'a' here for simplicity but ideally you should put a class like 'clickable' on every clicable element inside card(a, button) and use that in query selector
-					
+
 					clickableElements.forEach((ele) =>
-					ele.addEventListener("click", (e) => e.stopPropagation())
+						ele.addEventListener("click", (e) => e.stopPropagation())
 					);
-					
+
 					function handleClick(event) {
-					const noTextSelected = !window.getSelection().toString();
-					
-					if (noTextSelected) {
-						mainLink.click();
+						const noTextSelected = !window.getSelection().toString();
+
+						if (noTextSelected) {
+							mainLink.click();
+						}
 					}
-					}
-					
+
 					card.addEventListener("click", handleClick);
+
 				</script>
 			</div>
 		</div>
@@ -1404,18 +1407,25 @@
 				<h2>Contact</h2>
 				<p>Contact Me</p>
 			</div>
-			
+
 			<!-- My Hectic form -->
 			<form action="forms/contact.php" method="post" role="form" class="php-email-form mt-4">
 				<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.3.2/iframeResizer.min.js"></script>
-					<div style="width:100%; min-height:500px">
-						<iframe src="https://hello.hecticapp.com/01/oak-technologies/project-discovery-form?inFrame=true" id="hectic-form" style="padding: 0px; margin: 0px; border: 0; max-width: 100%; min-width: 100%"></iframe>
-					</div>
+				<div style="width:100%; min-height:500px">
+					<iframe src="https://hello.hecticapp.com/01/oak-technologies/project-discovery-form?inFrame=true" id="hectic-form" style="padding: 0px; margin: 0px; border: 0; max-width: 100%; min-width: 100%"></iframe>
+				</div>
 				<script type="text/javascript">
-				setTimeout(() => iFrameResize({heightCalculationMethod: 'min', sizeWidth: true, sizeHeight: true, log: false, checkOrigin: false}, '#hectic-form'),100);
+					setTimeout(() => iFrameResize({
+						heightCalculationMethod: 'min',
+						sizeWidth: true,
+						sizeHeight: true,
+						log: false,
+						checkOrigin: false
+					}, '#hectic-form'), 100);
+
 				</script>
 			</form>
-			
+
 			<div class="row mt-2">
 				<div class="col-md-6 d-flex align-items-stretch">
 					<div class="info-box">
@@ -1463,7 +1473,7 @@
 				</div>
 			</div>
 
-		<!--
+			<!--
 			<form action="forms/contact.php" method="post" role="form" class="php-email-form mt-4">
 				<div class="form-row">
 					<div class="col-md-6 form-group">
@@ -1491,7 +1501,7 @@
 				<div class="text-center"><button type="submit">Send Message</button></div>
 			</form>
 		-->
-												
+
 		</div>
 	</section>
 	<!-- End Contact Section -->
