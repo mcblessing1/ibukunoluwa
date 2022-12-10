@@ -3,6 +3,7 @@
 --------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
+  /* font-family: "Sora", sans-serif; */
   font-size: 15px;
   color: #fff;
   position: relative;
@@ -65,7 +66,7 @@ h6 {
   align-items: center;
   z-index: 997;
   overflow-y: auto;    
-  background: rgba(0, 0, 0, 0.68);
+  background: rgba(0, 0, 0, 0.82);
 }
 
 @media (max-width: 576px) {
@@ -75,7 +76,7 @@ h6 {
   }
   
   #header {
-    height: auto;
+    /* height: auto; */
   }
 
 }
@@ -100,7 +101,7 @@ h6 {
   padding: 0;
   line-height: 1;
   font-weight: 700;
-  font-family: "Poppins", sans-serif;
+  font-family: "Sora", sans-serif;
 }
 
 #header h1 a,
@@ -137,7 +138,7 @@ h6 {
 
 /* #header > div > h2 > a {
   color: #fff !important;
-  font-family: "Poppins", sans-serif;
+  font-family: "Sora", sans-serif;
   font-size: 40px;
   font-weight: 700;
 } */
@@ -242,7 +243,7 @@ h6 {
   position: relative;
   color: rgba(255, 255, 255, 0.7);
   font-size: 16px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Sora", sans-serif;
   font-weight: 400;
 }
 
@@ -295,7 +296,7 @@ h6 {
 
 .mobile-nav {
   position: fixed;
-  top: 55px;
+  top: 200px;
   right: 15px;
   /*  bottom: 15px;*/
   left: 15px;
@@ -444,7 +445,7 @@ section .container {
   letter-spacing: 2px;
   text-transform: uppercase;
   color: #aaaaaa;
-  font-family: "Poppins", sans-serif;
+  font-family: "Sora", sans-serif;
 }
 
 .section-title h2::after {
@@ -462,7 +463,7 @@ section .container {
   font-size: 36px;
   font-weight: 700;
   text-transform: uppercase;
-  font-family: "Poppins", sans-serif;
+  font-family: "Sora", sans-serif;
   color: #fff;
 }
 
@@ -560,7 +561,7 @@ section .container {
   text-transform: uppercase;
   display: block;
   font-weight: 600;
-  font-family: "Poppins", sans-serif;
+  font-family: "Sora", sans-serif;
   color: #fff;
 }
 
@@ -720,7 +721,7 @@ section .container {
   font-size: 18px;
   font-weight: 600;
   text-transform: uppercase;
-  font-family: "Poppins", sans-serif;
+  font-family: "Sora", sans-serif;
   color: #8062e6;
   margin-bottom: 10px;
 }
