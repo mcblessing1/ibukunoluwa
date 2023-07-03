@@ -177,16 +177,16 @@
   });
 
   // Change background image at intervals
-  $(document).ready(function() {
-    var urls = ['assets/img/bg-1.jpg', 'assets/img/bg-2.jpg'];
-    // var urls = ['https://raw.githubusercontent.com/mcblessing1/ibukunoluwashotubo/master/assets/img/bg-1.jpg', 'https://raw.githubusercontent.com/mcblessing1/ibukunoluwashotubo/master/assets/img/bg-2.jpg'];
+  // $(document).ready(function() {
+  //   var urls = ['assets/img/bg-1.jpg', 'assets/img/bg-2.jpg'];
+  //   // var urls = ['https://raw.githubusercontent.com/mcblessing1/ibukunoluwashotubo/master/assets/img/bg-1.jpg', 'https://raw.githubusercontent.com/mcblessing1/ibukunoluwashotubo/master/assets/img/bg-2.jpg'];
   
-    var cout = 1;
-    $('body').css('background-image', 'url("' + urls[0] + '")');
-    setInterval(function() {
-      $('body').css('background-image', 'url("' + urls[cout] + '")');
-      cout == urls.length-1 ? cout = 0 : cout++;
-    }, 5000);
-  });
+  //   var cout = 1;
+  //   $('body').css('background-image', 'url("' + urls[0] + '")');
+  //   setInterval(function() {
+  //     $('body').css('background-image', 'url("' + urls[cout] + '")');
+  //     cout == urls.length-1 ? cout = 0 : cout++;
+  //   }, 5000);
+  // });
 
 })(jQuery);
